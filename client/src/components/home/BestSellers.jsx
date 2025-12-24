@@ -16,9 +16,14 @@ const BestSellers = () => {
       try {
         const data = await getProducts();
         // Take first 8 products as "best sellers"
-        setProducts(data.slice(0, 8));
+        if (Array.isArray(data)) {
+          setProducts(data.slice(0, 8));
+        } else {
+          setProducts([]);
+        }
       } catch (error) {
         console.error('Error fetching products:', error);
+        setProducts([]);
       } finally {
         setLoading(false);
       }
