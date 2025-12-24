@@ -21,9 +21,10 @@ const Products = () => {
     const fetchProducts = async () => {
       try {
         const data = await getProducts();
-        setProducts(data);
+        setProducts(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error('Error fetching products:', error);
+        setProducts([]);
       } finally {
         setLoading(false);
       }
@@ -58,9 +59,9 @@ const Products = () => {
       const query = searchQuery.toLowerCase();
       filtered = filtered.filter(
         (product) =>
-          product.name.toLowerCase().includes(query) ||
-          product.shortDesc.toLowerCase().includes(query) ||
-          product.tags.some((tag) => tag.toLowerCase().includes(query))
+          product.name?.toLowerCase().includes(query) ||
+          product.shortDesc?.toLowerCase().includes(query) ||
+          (product.tags || []).some((tag) => tag.toLowerCase().includes(query))
       );
     }
 
