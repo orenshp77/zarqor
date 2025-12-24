@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, User } from 'lucide-react';
 
 const MobileMenu = ({ navLinks, onClose }) => {
   const location = useLocation();
@@ -61,32 +61,40 @@ const MobileMenu = ({ navLinks, onClose }) => {
             <h3 className="text-sm font-semibold text-gray-500 mb-4">יצירת קשר</h3>
             <div className="space-y-3">
               <a
-                href="tel:03-1234567"
+                href="tel:0507229966"
                 className="flex items-center gap-3 text-gray-700 hover:text-primary-500 transition-colors"
               >
                 <Phone size={18} />
-                <span>03-1234567</span>
+                <span>050-7229966</span>
               </a>
               <a
-                href="mailto:info@zarkor.co.il"
+                href="mailto:telaviv2u@gmail.com"
                 className="flex items-center gap-3 text-gray-700 hover:text-primary-500 transition-colors"
               >
                 <Mail size={18} />
-                <span>info@zarkor.co.il</span>
+                <span>telaviv2u@gmail.com</span>
               </a>
               <div className="flex items-center gap-3 text-gray-700">
                 <MapPin size={18} />
-                <span>תל אביב, ישראל</span>
+                <span>קרית אתא, ישראל</span>
               </div>
             </div>
 
-            {/* CTA Button */}
+            {/* CTA Buttons */}
             <Link
               to="/quote"
               onClick={onClose}
               className="mt-6 flex items-center justify-center gap-2 w-full py-3 bg-primary-500 text-white rounded-xl font-medium"
             >
               קבלת הצעת מחיר
+            </Link>
+            <Link
+              to="/admin"
+              onClick={onClose}
+              className="mt-3 flex items-center justify-center gap-2 w-full py-3 bg-gray-100 text-gray-700 rounded-xl font-medium hover:bg-gray-200 transition-colors"
+            >
+              <User size={18} />
+              אזור אישי
             </Link>
           </div>
         </div>

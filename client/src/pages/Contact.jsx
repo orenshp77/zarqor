@@ -95,19 +95,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'טלפון',
-      details: ['03-1234567', '050-1234567'],
-      action: 'tel:03-1234567'
+      details: ['050-7229966'],
+      action: 'tel:0507229966'
     },
     {
       icon: Mail,
       title: 'אימייל',
-      details: ['info@zarkor.co.il'],
-      action: 'mailto:info@zarkor.co.il'
+      details: ['telaviv2u@gmail.com'],
+      action: 'mailto:telaviv2u@gmail.com'
     },
     {
       icon: MapPin,
       title: 'כתובת',
-      details: ['רחוב הברזל 30', 'תל אביב'],
+      details: ['דרך חיפה 19', 'קרית אתא'],
       action: null
     },
     {

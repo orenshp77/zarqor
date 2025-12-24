@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ShoppingBag, Phone } from 'lucide-react';
+import { Menu, X, ShoppingBag, Phone, User } from 'lucide-react';
 import MegaMenu from './MegaMenu';
 import MobileMenu from './MobileMenu';
 import { useQuote } from '../../context/QuoteContext';
@@ -102,12 +102,19 @@ const Navbar = () => {
                   </motion.span>
                 )}
               </Link>
+              <Link
+                to="/admin"
+                className="flex items-center gap-2 text-gray-700 hover:text-primary-500 transition-colors"
+              >
+                <User size={20} />
+                <span className="font-medium">אזור אישי</span>
+              </Link>
               <a
-                href="tel:03-1234567"
+                href="tel:0507229966"
                 className="flex items-center gap-2 bg-primary-500 text-white px-5 py-2.5 rounded-full font-medium hover:bg-primary-600 transition-colors"
               >
                 <Phone size={18} />
-                <span>03-1234567</span>
+                <span>050-7229966</span>
               </a>
             </div>
 

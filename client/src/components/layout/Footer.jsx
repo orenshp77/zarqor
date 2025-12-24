@@ -108,25 +108,25 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:03-1234567"
+                  href="tel:0507229966"
                   className="flex items-center gap-3 text-gray-400 hover:text-primary-400 transition-colors"
                 >
                   <Phone size={18} className="text-primary-400" />
-                  <span>03-1234567</span>
+                  <span>050-7229966</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@zarkor.co.il"
+                  href="mailto:telaviv2u@gmail.com"
                   className="flex items-center gap-3 text-gray-400 hover:text-primary-400 transition-colors"
                 >
                   <Mail size={18} className="text-primary-400" />
-                  <span>info@zarkor.co.il</span>
+                  <span>telaviv2u@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-gray-400">
                 <MapPin size={18} className="text-primary-400 mt-1" />
-                <span>רחוב הברזל 30, תל אביב</span>
+                <span>דרך חיפה 19, קרית אתא</span>
               </li>
               <li className="flex items-start gap-3 text-gray-400">
                 <Clock size={18} className="text-primary-400 mt-1" />
