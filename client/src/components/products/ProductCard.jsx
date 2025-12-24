@@ -55,7 +55,7 @@ const ProductCard = ({ product }) => {
             {product.name}
           </h3>
           <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-            {product.shortDesc}
+            {product.shortDesc || product.description || ''}
           </p>
 
           {/* Tags */}
@@ -72,7 +72,7 @@ const ProductCard = ({ product }) => {
 
           {/* Footer */}
           <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-            <span className="text-primary-500 font-bold">{product.priceRange}</span>
+            <span className="text-primary-500 font-bold">{product.priceRange || product.price || ''}</span>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
