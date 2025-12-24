@@ -80,31 +80,33 @@ const ProductModal = ({ product, onClose }) => {
               </h2>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                {product.fullDesc || product.shortDesc}
+                {product.fullDesc || product.shortDesc || product.description || ''}
               </p>
 
               {/* Price */}
               <div className="flex items-center gap-2 mb-6">
                 <Tag className="text-primary-500" size={20} />
                 <span className="text-2xl font-bold text-primary-500">
-                  {product.priceRange}
+                  {product.priceRange || product.price || ''}
                 </span>
               </div>
 
               {/* Tags */}
-              <div className="mb-6">
-                <h4 className="text-sm font-medium text-gray-500 mb-2">תגיות:</h4>
-                <div className="flex flex-wrap gap-2">
-                  {product.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg text-sm"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+              {product.tags && product.tags.length > 0 && (
+                <div className="mb-6">
+                  <h4 className="text-sm font-medium text-gray-500 mb-2">תגיות:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {product.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-lg text-sm"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
               {/* Specs */}
               <div className="mb-8 p-4 bg-gray-50 rounded-xl">
