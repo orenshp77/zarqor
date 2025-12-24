@@ -45,11 +45,14 @@ export default function ProductsManager() {
     try {
       const response = await fetch('/api/products');
       const data = await response.json();
-      if (data.success) {
+      if (data.success && Array.isArray(data.data)) {
         setProducts(data.data);
+      } else {
+        setProducts([]);
       }
     } catch (error) {
       console.error('Error fetching products:', error);
+      setProducts([]);
     } finally {
       setLoading(false);
     }
@@ -59,11 +62,14 @@ export default function ProductsManager() {
     try {
       const response = await fetch('/api/settings/categories');
       const data = await response.json();
-      if (data.success) {
+      if (data.success && Array.isArray(data.data)) {
         setCategories(data.data);
+      } else {
+        setCategories([]);
       }
     } catch (error) {
       console.error('Error fetching categories:', error);
+      setCategories([]);
     }
   };
 
