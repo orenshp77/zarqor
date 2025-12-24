@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build output
+client/dist/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Uploads (will be stored externally in production)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Data files
+server/data/*.json
+!server/data/.gitkeep

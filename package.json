@@ -1,0 +1,17 @@
+{
+  "name": "zarkor-catalog",
+  "version": "1.0.0",
+  "description": "Zarkor Catalog - Product Catalog System",
+  "scripts": {
+    "start": "cd server && node index.js",
+    "build": "cd client && npm install && npm run build",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "cd server && node index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
