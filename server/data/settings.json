@@ -1,0 +1,75 @@
+{
+  "site": {
+    "name": "זרקור פרסום ושיווק",
+    "tagline": "המומחים למוצרי פרסום וקידום מכירות",
+    "logo": "/images/logo.png",
+    "favicon": "/images/favicon.ico",
+    "email": "info@zarkor.co.il",
+    "phone": "03-1234567",
+    "whatsapp": "972501234567",
+    "address": "רחוב הדוגמה 123, תל אביב"
+  },
+  "homepage": {
+    "heroTitle": "פתרונות פרסום מקצועיים לעסק שלך",
+    "heroSubtitle": "מגוון רחב של מוצרי קידום מכירות, מתנות לעובדים וציוד משרדי ממותג",
+    "heroImage": "/images/hero-bg.jpg",
+    "showBestSellers": true,
+    "showCategories": true,
+    "showAdvantages": true
+  },
+  "about": {
+    "title": "אודות זרקור",
+    "content": "זרקור פרסום ושיווק היא חברה מובילה בתחום מוצרי הפרסום והקד\"מ...",
+    "image": "/images/about.jpg"
+  },
+  "story": {
+    "title": "הסיפור שלנו",
+    "content": "הסיפור של זרקור התחיל לפני למעלה מ-20 שנה...",
+    "image": "/images/story.jpg"
+  },
+  "contact": {
+    "title": "צור קשר",
+    "subtitle": "נשמח לעמוד לשירותכם",
+    "mapEmbed": ""
+  },
+  "footer": {
+    "copyright": "© 2024 זרקור פרסום ושיווק. כל הזכויות שמורות.",
+    "socialLinks": {
+      "facebook": "",
+      "instagram": "",
+      "linkedin": ""
+    }
+  },
+  "categories": [
+    {
+      "id": "writing",
+      "name": "כלי כתיבה",
+      "icon": "Pen",
+      "color": "#ec4899"
+    },
+    {
+      "id": "office",
+      "name": "סביבת משרד",
+      "icon": "Briefcase",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "promo",
+      "name": "מוצרי קד\"מ",
+      "icon": "Gift",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "gifts",
+      "name": "מתנות לעובדים",
+      "icon": "Heart",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "tech",
+      "name": "טכנולוגיה וגאדג'טים",
+      "icon": "Smartphone",
+      "color": "#10b981"
+    }
+  ]
+}

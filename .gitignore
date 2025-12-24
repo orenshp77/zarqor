@@ -27,6 +27,6 @@ Thumbs.db
 server/uploads/*
 !server/uploads/.gitkeep
 
-# Data files
-server/data/*.json
+# Data files (keep products.json for initial data)
+!server/data/products.json
 !server/data/.gitkeep
