@@ -106,9 +106,6 @@ export default function Login() {
           </button>
         </form>
 
-        <p className="text-center text-sm text-gray-500 mt-6">
-          ברירת מחדל: admin / admin123
-        </p>
       </motion.div>
     </div>
   );
